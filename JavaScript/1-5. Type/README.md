@@ -6,7 +6,11 @@
     - Object, Array, function, classes
     - 힙에 저장이 되고, 주소가 콜 스택에 저장이 된다.
 
+## 자바스크립트는 동적 타입
 
+```let foo = 42;
+foo = 'bar'
+foo = true```
 
 
 
