@@ -8,9 +8,11 @@
 
 ## 자바스크립트는 동적 타입
 
-```let foo = 42;
+```
+let foo = 42;
 foo = 'bar'
-foo = true```
+foo = true
+```
 
 
 
