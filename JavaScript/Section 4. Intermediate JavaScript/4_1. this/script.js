@@ -1,4 +1,4 @@
-/* // Method
+// Method
 // this -> Object
 const audio = {
     title: 'My Audio',
@@ -31,7 +31,7 @@ function Audio(title){
 }
 const myAudio = new Audio('My Audio');
 
- */
+
 const audio = {
     title: 'My Audio',
     categories: ['rock', 'pop'],
@@ -43,3 +43,7 @@ const audio = {
     }
 }
 audio.displayCategories();
+
+// 화살표 함수에서의 this
+// 항상 상위 스코프의 this를 가리킨다.
+// lexical this
