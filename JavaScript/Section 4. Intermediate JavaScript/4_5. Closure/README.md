@@ -4,6 +4,7 @@
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
 [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+[How do closures work?](https://sentry.io/answers/javascript-closures/)
 
 ![alt text](image.png)
 위 그림에서 outerFunction은 한번 call되고 끝남
