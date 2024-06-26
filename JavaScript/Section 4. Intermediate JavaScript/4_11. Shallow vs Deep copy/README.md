@@ -37,8 +37,7 @@ console.log(arr2); // [1, 2, 3, 4, [5, 6, 7]]
 ```
 
 ### Shallow Freeze (얕은 동결)
-**Object.freeze() 메서드는 객체를 동결합니다. 동결된 객체는 더 이상 변경될 수 없습니다.**
-즉, 동결된 객체는 새로운 속성을 추가하거나 존재하는 속성을 제거하는 것을 방지하며 존재하는 속성의 불변성, 설정 가능성(configurability), 작성 가능성이 변경되는 것을 방지하고, 존재하는 속성의 값이 변경되는 것도 방지합니다. 또한, 동결 객체는 그 프로토타입이 변경되는것도 방지합니다. freeze()는 전달된 동일한 객체를 반환합니다.
+**Object.freeze() 메서드는 객체를 동결합니다. 동결된 객체는 더 이상 변경될 수 없습니다.** <br> 즉, 동결된 객체는 새로운 속성을 추가하거나 존재하는 속성을 제거하는 것을 방지하며 존재하는 속성의 불변성, 설정 가능성(configurability), 작성 가능성이 변경되는 것을 방지하고, 존재하는 속성의 값이 변경되는 것도 방지합니다. 또한, 동결 객체는 그 프로토타입이 변경되는것도 방지합니다. freeze()는 전달된 동일한 객체를 반환합니다.
 출처 - [Object.freeze() - MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 ```js
 // 얕은 동결 (shallow freeze)
@@ -80,8 +79,7 @@ console.log("Second log:", JSON.parse(JSON.stringify(obj1)));
 <br>
 
 ## Deep Copy (깊은 복사)
-**깊은 복사는 복사본의 속성이 복사본이 만들어진 원본 객체와 같은 참조를 공유하지 않는 복사이다.**
-따라서 원본이나 복사본을 변경할 때, 다른 객체가 변경되지 않는 것을 보장할 수 있습니다. 
+**깊은 복사는 복사본의 속성이 복사본이 만들어진 원본 객체와 같은 참조를 공유하지 않는 복사이다.** <br> 따라서 원본이나 복사본을 변경할 때, 다른 객체가 변경되지 않는 것을 보장할 수 있습니다. 
 
 출처 - [깊은 복사 - MDN](https://developer.mozilla.org/ko/docs/Glossary/Deep_copy)
 #### 깊은 복사 예제
