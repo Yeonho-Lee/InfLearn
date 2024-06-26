@@ -17,7 +17,7 @@ console.log(a == b); // false
 console.log(a === b); // false
 ```
 
-# Deep Compare (깊은 비교)
+# Deep Compar (깊은 비교)
 - 객체의 경우에도 값으로 배교
 - 방법은 아래와 같음
     - Object depth가 깊지 않은 경우: JSON.stringify() 사용
