@@ -1,4 +1,4 @@
-// Method
+/* // Method
 // this -> Object
 const audio = {
     title: 'My Audio',
@@ -6,12 +6,12 @@ const audio = {
         console.log('play this', this);
     }
 }
-audio.play();
+audio.play(); // audio object
 // 위와 같음
 audio.stop = function() {
     console.log('stop this', this);
 }
-audio.stop();
+audio.stop(); // audio object
 
 
 
@@ -20,16 +20,16 @@ audio.stop();
 function playAudio(){
     console.log(this);
 }
-playAudio(); // Window Object
+playAudio(); // Window Object */
 
 
 // Constructor Function
-// this -> Empty Object
+// this -> this Object
 function Audio(title){
     this.title = title;
     console.log('constructor this', this);
 }
-const myAudio = new Audio('My Audio');
+const myAudio = new Audio('My Audio'); // Audio {title: "My Audio"}
 
 
 const audio = {
