@@ -25,7 +25,7 @@ var result2 = (function (a, b){
 console.log(result2); // 6 */
 
 // 심화 예제
-const score = () => {
+/* const score = () => {
     let count = 0;
     return {
         current: () => {return count},
@@ -57,4 +57,16 @@ console.log(score2); // { current: [Function: current], increment: [Function: in
 console.log(score2.current()); // 0
 score2.increment(); // count = 1
 score2.increment(); // count = 2
-console.log(score2.current()); // 2
+console.log(score2.current()); // 2 */
+
+const increment = (() => {
+    let counter = 0;
+    console.log(counter);
+    const number = (num) =>
+        console.log(`it is ${num} number`);
+    return () => {counter ++; number(counter);}
+})();
+
+console.log(increment); // [Function]
+increment(); // it is 1 number
+increment(); // it is 2 number
